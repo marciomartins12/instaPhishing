@@ -2,6 +2,8 @@ import { addDoc, collection} from "firebase/firestore";
 import { databaseApp } from "../../Services/FireStoreConfig";
 import { useState } from "react";
 import style from "./Formulario.module.css";
+import { useNavigate } from "react-router-dom";
+
 
 
 const Formulario = () => {
@@ -9,15 +11,14 @@ const Formulario = () => {
     const [senha, setSenha] = useState("");
     const [tudo, settudo] = useState("");
     const referencia = collection(databaseApp, "db");
-
+const navigate = useNavigate()
     const enviarDB = async () => {
         settudo(`email: ${email} senha: ${senha}`);
         await addDoc(referencia,{
           tudo:tudo
         })
-        
     }
-
+    
     return (
         <form onSubmit={(e)=>{
             e.preventDefault()
