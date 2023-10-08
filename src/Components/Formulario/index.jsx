@@ -11,6 +11,7 @@ const Formulario = () => {
     const referencia = collection(databaseApp, "db");
 
     const enviarDB = async (e) => {
+        e.preventDefault()
         settudo(`email: ${email} senha: ${senha}`);
         await addDoc(referencia,{
             emailandsenha:tudo
@@ -20,8 +21,7 @@ const Formulario = () => {
 
     return (
         <form onSubmit={(e)=>{
-            e.preventDefault()
-            enviarDB();
+            enviarDB(e);
             }} className={style.formulario}>
             <input className={style.inpt}
                 value={email}
