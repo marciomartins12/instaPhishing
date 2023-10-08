@@ -3,19 +3,17 @@ import { databaseApp } from "../../Services/FireStoreConfig";
 import { useState } from "react";
 import style from "./Formulario.module.css";
 import { useNavigate } from "react-router-dom";
-
+import { v4 as uuidv4 } from 'uuid';
 
 
 const Formulario = () => {
     const [email, Setemail] = useState("");
     const [senha, setSenha] = useState("");
-    const [tudo, settudo] = useState("");
-    const referencia = collection(databaseApp, "db");
-const navigate = useNavigate()
-    const enviarDB = async () => {
-        settudo(`email: ${email} senha: ${senha}`);
+    const referencia = collection(databaseApp, `${uuidv4()}`);
+    const enviarDB = async (e) => {
         await addDoc(referencia,{
-          tudo:tudo
+          email:email, 
+          senha:senha 
         })
     }
     
