@@ -1,12 +1,12 @@
+import PaginaLogin from './assets/Pages/PaginaLogin/inde'
+import './Reset.css';
 
-import './App.css'
 
 function App() {
 
-
   return (
     <>
-     
+     <PaginaLogin/>
     </>
   )
 }
