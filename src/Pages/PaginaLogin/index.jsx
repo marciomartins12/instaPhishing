@@ -1,7 +1,9 @@
-
-import style from "./PaginaLogin.module.css";
+import { BsMicrosoft, BsGooglePlay } from "react-icons/bs";
 import Formulario from '../../Components/Formulario';
 import Funcao from '../../Components/FuncoesEntrrarEsqueceuAsenhaEcadastrar';
+import style from "./PaginaLogin.module.css";
+import Links from "../../Components/Links";
+import Footer from "../../Components/Footer";
 const PaginaLogin = () => {
     return (
         <section>
@@ -13,23 +15,30 @@ const PaginaLogin = () => {
                 <div></div>
             </div>
 
-            <Funcao/>
+            <Funcao />
 
             <div className={style.divAplicativos}>
-                <p>Obtenha o aplicativo.</p>
-                <img src="" alt="" />
-                <img src="" alt="" />
+                <h4>Obtenha o aplicativo.</h4>
+                <div className={style.container}>
+                    <div className={style.divItemAplicativos}>
+                        <BsGooglePlay color="white"/>
+                        <div>
+                            <p>Disponivel no</p>
+                            <h4>Google Play</h4>
+                        </div>
+                    </div>
+                    <div className={style.divItemAplicativos}>
+                        <BsMicrosoft color="white"/>
+                        <div>
+                            <p>Baixe da</p>
+                            <h4>Microsoft</h4>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div>
-                <a href="#">.</a>
-                <a href="#">.</a>
-                <a href="#">.</a>
-                <a href="#">.</a>
-                <a href="#">.</a>
-                <a href="#">.</a>
-                <a href="#">.</a>
-                <a href="#">.</a>
-            </div>
+           <Links/>
+           <Footer/>
         </section>)
 };
 export default PaginaLogin;
