@@ -1,10 +1,10 @@
 
 .formulario{
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 1em;
-    --tamanho-width: 80%;
+    --tamanho-width:70%;
 }
 .inpt{
     width: var(--tamanho-width);
@@ -18,7 +18,7 @@
     background-color: rgb(0, 149, 246);
     border: none;
     border-radius: .45em;
-    padding: .5em 0;
+    padding: .75em 0;
     width: var(--tamanho-width);
     color:  white;
 }

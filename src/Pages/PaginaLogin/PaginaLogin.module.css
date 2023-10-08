@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Cookie&family=Roboto&display=swap');
 .tituloInstagram {
+    margin-top: 1em;
     font-family: 'Cookie', cursive;
     font-size: 3em;
     text-align: center;
@@ -7,14 +9,16 @@
 
 .divOU {
     margin-top: 1em;
+    font-size: .88em;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1em;
+    color:  #777070;
 }
 
 .divOU div {
-    border: 1px solid #d2d2d2;
+    border: 1px solid #e6dede;
     width: 30%;
 }
 
