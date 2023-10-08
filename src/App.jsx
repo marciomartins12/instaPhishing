@@ -1,7 +1,5 @@
-import PaginaLogin from './assets/Pages/PaginaLogin/inde'
+import PaginaLogin from './Pages/PaginaLogin'
 import './Reset.css';
-
-
 function App() {
 
   return (
