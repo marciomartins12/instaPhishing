@@ -3,11 +3,11 @@ const Formulario = () => {
     return (<form className={style.formulario}>
         <input className={style.inpt}
             type="text"
-            placeholder="Telefone, nome de usuário ou email"
+            placeholder="  Telefone, nome de usuário ou email"
         />
         <input className={style.inpt}
             type="password"
-            placeholder="Senha"
+            placeholder="  Senha"
         />
         <button>Entrar</button>
     </form>)
