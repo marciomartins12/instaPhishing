@@ -1,6 +1,18 @@
-.tituloInstagram{
+.tituloInstagram {
     font-family: 'Cookie', cursive;
     font-size: 3em;
     text-align: center;
     font-weight: 600;
-};
+}
+
+.divOU {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.divOU div{
+    border: 1px solid #d2d2d2;
+    width: 30%;
+}
