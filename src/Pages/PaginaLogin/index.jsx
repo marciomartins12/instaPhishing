@@ -1,10 +1,12 @@
 import { BsMicrosoft, BsGooglePlay } from "react-icons/bs";
 import Formulario from '../../Components/Formulario';
 import Funcao from '../../Components/FuncoesEntrrarEsqueceuAsenhaEcadastrar';
-import style from "./PaginaLogin.module.css";
 import Links from "../../Components/Links";
 import Footer from "../../Components/Footer";
+import style from "./PaginaLogin.module.css";
+
 const PaginaLogin = () => {
+  
     return (
         <section>
             <h1 className={style.tituloInstagram}>Instagram</h1>
