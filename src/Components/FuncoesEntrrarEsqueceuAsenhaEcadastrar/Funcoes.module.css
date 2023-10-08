@@ -1,0 +1,22 @@
+.divFuncoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.faceboock {
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    gap: .45em;
+    color: #385185;
+    text-decoration: none;
+}
+.esqueceuASenha{
+    text-decoration: none;
+    color: black;
+}
+.semConta a{
+ text-decoration: none;
+}

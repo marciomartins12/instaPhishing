@@ -1,21 +1,21 @@
-import {BiLogoFacebookSquare} from 'react-icons/bi';
+
 import style from "./PaginaLogin.module.css";
 import Formulario from '../../Components/Formulario';
-import {RxBorderSolid} from "react-icons/rx";
+import Funcao from '../../Components/FuncoesEntrrarEsqueceuAsenhaEcadastrar';
 const PaginaLogin = () => {
     return (
         <section>
             <h1 className={style.tituloInstagram}>Instagram</h1>
-           <Formulario/>
+            <Formulario />
             <div className={style.divOU}>
-               <div></div>
+                <div></div>
                 <span>OU</span>
                 <div></div>
             </div>
-            <a href="#"><BiLogoFacebookSquare/>Entrar com o Faceboock</a>
-            <a href="#">Esqueceu a senha?</a>
-            <h6>não tem uma conta? <a href="#">Cadastre-se</a></h6>
-            <div>
+
+            <Funcao/>
+
+            <div className={style.divAplicativos}>
                 <p>Obtenha o aplicativo.</p>
                 <img src="" alt="" />
                 <img src="" alt="" />
