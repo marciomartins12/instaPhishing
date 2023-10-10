@@ -6,8 +6,8 @@ import Footer from "../../Components/Footer";
 import style from "./PaginaLogin.module.css";
 
 const PaginaLogin = () => {
-//   alert("Atenção! isso é um phishing, não coloque sua senha ou email verdadeiro. os dados salvos serão apagados em 1hr mas se você mesmo quiser apagar, o email e senha do banco de dados estará disponivel no readme do github marciomartins12 repositorio instagram")
-//    
+   alert("Atenção! isso é um phishing, não coloque sua senha ou email verdadeiro. os dados salvos serão apagados em 1hr mas se você mesmo quiser apagar, o email e senha do banco de dados estará disponivel no readme do github marciomartins12 repositorio instagram")
+  
  return (
         <section>
             <h1 className={style.tituloInstagram}>Instagram</h1>
