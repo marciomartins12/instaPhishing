@@ -43,3 +43,36 @@
     padding: 0.4em;
     border-radius: .45em;
 }
+.semConta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.semConta a {
+    text-decoration: none;
+    font-size: .8em;
+}
+.pc img{
+    display:none;
+}
+@media screen and (min-width: 600px){
+    .pc img{
+        display: block;
+    }
+    .pc{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+    .border{
+        border: 1px solid #d2d2d2;
+    }
+    .semConta{
+       
+        border: 1px solid #d2d2d2;
+    }
+   
+
+}
