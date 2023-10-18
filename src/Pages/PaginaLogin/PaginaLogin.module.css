@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Cookie&family=Roboto&display=swap');
+
 .tituloInstagram {
     margin-top: 1em;
     font-family: 'Cookie', cursive;
@@ -53,6 +54,8 @@
     text-decoration: none;
     font-size: .8em;
 }
+
+
 .pc img{
     display:none;
 }
@@ -60,17 +63,21 @@
     .pc img{
         display: block;
     }
+    
     .pc{
+        margin-top: 7em;
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 2em;
     }
     .border{
+        width: 350px;
         border: 1px solid #d2d2d2;
+        margin-bottom: .75em;
     }
     .semConta{
-       
+        padding: 1em;
         border: 1px solid #d2d2d2;
     }
    
