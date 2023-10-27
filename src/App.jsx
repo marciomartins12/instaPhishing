@@ -9,11 +9,13 @@ function Roteador() {
       <Routes>
         <Route path="/" element={
           <PaginaLogin/>
-        }>
-        </Route>
+        }
+        />
+        
         <Route path='*' element={
           <Erro404/>
-        } />
+        }
+        />
       </Routes>
     </BrowserRouter>
 
