@@ -3,3 +3,8 @@
     color: #727272;
     text-align: center;
 }
+@media  screen and (min-width: 800px) {
+    .footer p{
+        font-size: 0.80em;
+    }
+}

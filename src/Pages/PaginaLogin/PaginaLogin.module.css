@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600;700&family=Cookie&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 .tituloInstagram {
     margin-top: 1em;
-    font-family: 'Cookie', cursive;
+    font-family: 'Grand Hotel', cursive;
     font-size: 3em;
     text-align: center;
     font-weight: 600;
@@ -59,7 +59,7 @@
 .pc img{
     display:none;
 }
-@media screen and (min-width: 1024px){
+@media screen and (min-width: 800px){
     .pc img{
         display: block;
     }

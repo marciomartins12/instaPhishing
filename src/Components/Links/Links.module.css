@@ -5,10 +5,15 @@
     align-items: center;
     gap: .25em .5em;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 .divLinks a{
     font-size: .80em;
     text-decoration: none;
     color: #737373;
+}
+@media screen and (min-width: 800px){
+.divLinks{
+    margin-top: 6em;
+}
 }
