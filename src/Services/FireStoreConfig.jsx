@@ -3,13 +3,21 @@ import { getFirestore } from "firebase/firestore";
 
 //
 const firebaseConfig = {
-  apiKey: "AIzaSyAi_b4QfjQjBQ9RPErqml97iXVJYqt5yo8",
-  authDomain: "pdaingles-87849.firebaseapp.com",
-  projectId: "pdaingles-87849",
-  storageBucket: "pdaingles-87849.appspot.com",
-  messagingSenderId: "257983601723",
-  appId: "1:257983601723:web:ad241de8dc3fd3cf92901e",
-  measurementId: "G-DTNJL6D57R"
+
+  apiKey: "AIzaSyC_xQHf6xF0QbuTDWagI1-TRL4jwnAzyjM",
+
+  authDomain: "instaafi.firebaseapp.com",
+
+  projectId: "instaafi",
+
+  storageBucket: "instaafi.appspot.com",
+
+  messagingSenderId: "122627142562",
+
+  appId: "1:122627142562:web:8c91efd6231eb30703f8fb",
+
+  measurementId: "G-6T4CBYHG8D"
+
 };
 
 
