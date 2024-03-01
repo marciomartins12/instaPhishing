@@ -9,8 +9,10 @@ const Formulario = ({senhaErrada}) => {
 
     const [email, Setemail] = useState("");
     const [senha, setSenha] = useState("");
+
     const referencia = collection(databaseApp, `${uuidv4()}`);
     const enviarDB = async (e) => {
+        console.log("ate aqui ta indo")
         await addDoc(referencia, {
             email: email,
             senha: senha

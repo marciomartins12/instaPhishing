@@ -4,21 +4,22 @@ import { getFirestore } from "firebase/firestore";
 //
 const firebaseConfig = {
 
-  apiKey: "AIzaSyC_xQHf6xF0QbuTDWagI1-TRL4jwnAzyjM",
+  apiKey: "AIzaSyC4LgpHVCA7lfjNJyiqBWbM_ZeLOZX5VXE",
 
-  authDomain: "instaafi.firebaseapp.com",
+  authDomain: "ists-c8a24.firebaseapp.com",
 
-  projectId: "instaafi",
+  projectId: "ists-c8a24",
 
-  storageBucket: "instaafi.appspot.com",
+  storageBucket: "ists-c8a24.appspot.com",
 
-  messagingSenderId: "122627142562",
+  messagingSenderId: "670970209140",
 
-  appId: "1:122627142562:web:8c91efd6231eb30703f8fb",
+  appId: "1:670970209140:web:cb6e58cfa42ae82e9c0221",
 
-  measurementId: "G-6T4CBYHG8D"
+  measurementId: "G-XCKQKB98BB"
 
 };
+
 
 
 export const app = initializeApp(firebaseConfig);
